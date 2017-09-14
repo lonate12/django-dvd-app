@@ -1,0 +1,7 @@
+{% if dvds %}
+  {% for dvd in dvds %}
+    <h1>{{ dvd.name }}</h1>
+  {% endfor %}
+{% else %}
+  <h1>Sorry, no dvds have been added to the database yet.</h1>
+{% endif %}
